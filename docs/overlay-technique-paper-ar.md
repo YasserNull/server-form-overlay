@@ -18,8 +18,8 @@
 
 كيف استطعت فعل هذا؟
 
-![سكرين شوت توضح أزرار في شاشة اللعب](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/screenshot2.jpg)
-![سكرين شوت توضح أزرار في شاشة اللعب](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/screenshot3.jpg)
+![سكرين شوت توضح أزرار في شاشة اللعب](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot2.jpg)
+![سكرين شوت توضح أزرار في شاشة اللعب](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot3.jpg)
 
 ## كيف بدأت الفكرة: مشروع Ty-el's
 
@@ -50,7 +50,7 @@
 
 على سبيل المثال، شاشة start وشاشة settings: عندما تكون في الواجهة الرئيسية وتضغط زر إعدادات، تُفتح شاشة الإعدادات وتختفي شاشة البداية لأنك انتقلت إلى شاشة أخرى. لكن عند إضافة هذه الخاصية لشاشة الإعدادات وتعطيلها، تصبح شاشة الإعدادات شاشة متراكبة تظهر فوق الشاشة الحالية.
 
-![صورة توضح كيف أن شاشة server form أصبحت overlay فوق شاشة اللعب](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/screenshot1.jpg)
+![صورة توضح كيف أن شاشة server form أصبحت overlay فوق شاشة اللعب](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot1.jpg)
 
 ### حل مشاكل التحكم والأداء
 
@@ -78,24 +78,24 @@
 
 اختبرت نفس الخوارزمية على شاشات أخرى مثل `npc_interact`، واستطعت فعل نفس الشيء: إضافة أزرار في الشاشة مع إمكانية جعلها تُنفذ أوامر، لكنها تحتوي على مشاكل مثل عدم إمكانية تغيير slot في hotbar.
 
-![صورة توضح شاشة npc متراكبة فوق شاشة الاعب](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/screenshot11.jpg)
+![صورة توضح شاشة npc متراكبة فوق شاشة الاعب](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot11.jpg)
 
 ### شاشة النوم (`bed`)
 
 اختبرتها أيضًا على شاشة النوم `bed`، لكن اللعبة تُخفي أزرار التحكم في الواجهة الجديدة الخاصة بـ oreui لهذه الشاشة. لكن عند العودة إلى تحديث ما قبل oreui، لاستعمال شاشة bed القديمة، تظهر أزرار التحكم ويصبح بالإمكان الضرب والبناء أثناء النوم.
 
-![صورة توضح أزرار التحكم وأنا نائم](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/screenshot9.jpg)
+![صورة توضح أزرار التحكم وأنا نائم](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot9.jpg)
 
 لكن لا يمكن التحرك لأن اللاعب يبقى ثابتًا في مكانه. وكما هو موضح في الصور التالية، يمكن استخدام القوس لرمي السهام أثناء النوم، وكذلك رمي كرات الثلج، واستعمال الحركات التعبيرية.
 
-![صورة متحركة توضح استعمال حركات تعبيرية أثناء النوم](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/emotes.gif)
-![صورة متحركة من منظور لاعب آخر توضح استعمال حركات تعبيرية أثناء النوم](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/emotes2.gif)
-![صورة متحركة من منضور الاعب توضح رمي كرات الثلج أثناء النوم](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/snowball.gif) 
-![صورة متحركة من منظور لاعب آخر توضح رمي كرات الثلج أثناء النوم](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/snowball2.gif)
+![صورة متحركة توضح استعمال حركات تعبيرية أثناء النوم](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/emotes.gif)
+![صورة متحركة من منظور لاعب آخر توضح استعمال حركات تعبيرية أثناء النوم](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/emotes2.gif)
+![صورة متحركة من منضور الاعب توضح رمي كرات الثلج أثناء النوم](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/snowball.gif) 
+![صورة متحركة من منظور لاعب آخر توضح رمي كرات الثلج أثناء النوم](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/snowball2.gif)
 
 و اكتشفت خللا اخر حيث انه عندما اقوم بالضغط على الشاشة (right click) يقوم ب الضغط على السرير و محاولة النوم فيه و تضهر رسالة `this bed is occupied` في الدردشة رغم ان الاعب نائم في نفس السرير.
 
-![صورة توضح رسالة الخطأ التي تضهر فالدردشة](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/this_bed_is_occupied.gif)
+![صورة توضح رسالة الخطأ التي تضهر فالدردشة](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/this_bed_is_occupied.gif)
 
 ### شاشة الصنع (`crafting`)
 
@@ -107,7 +107,7 @@
 
 تم إنشاء ملحق اختراق يعمل فقط عبر حزمة الموارد (Resource Pack)، وأصبح بالإمكان استعمال الصندوق مع التحرك والبناء والضرب في آن واحد. وهذا يُعد غشًا، خصوصًا إذا استُخدم على الخوادم، لأنه يخدع اللاعبين الآخرين ويوهمهم بأن اللاعب فاتح صندوقًا فقط بينما هو في الحقيقة يتحرك ويبني ويهاجم.
 
-![صورة متحركة توضح كيف خدعت لاعبا في خادم كيوب كرافت عبر فتح صندوق و اسقاطه اثناء تقدمه لي](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/cubecraft.gif)
+![صورة متحركة توضح كيف خدعت لاعبا في خادم كيوب كرافت عبر فتح صندوق و اسقاطه اثناء تقدمه لي](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/cubecraft.gif)
 
 كما اكتُشف خلل (bug) في خوارزميات اللعبة: أنها لا تتحقق من أن اللاعب فاتح صندوقًا بالفعل، ما يسمح بفتح عدة صناديق في الوقت نفسه.
 
@@ -115,7 +115,7 @@
 
 > **ملاحظة:** عند فتح أكثر من صندوق ثم إغلاق شاشة الصندوق، يُغلق آخر صندوق تم فتحه فقط. ونفس الشيء إذا فُتح أكثر من صندوق ثم ابتعد اللاعب عنها؛ يُغلق آخر صندوق فُتح وتبقى بقية الصناديق مفتوحة.
 
-![صورة متحركة توضح وجود عدة صناديق مفتوحة في آن واحد](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/chests.gif)
+![صورة متحركة توضح وجود عدة صناديق مفتوحة في آن واحد](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/chests.gif)
 
 وعند تجربة هذا على الخوادم، لا يعمل بنفس الطريقة؛ إذ لا يمكن فتح أكثر من صندوق، فمحاولة فتح صندوق آخر تُغلق الصندوق السابق فورًا وتفتح الصندوق الجديد، وهذا يبدو غريبًا للاعبين الآخرين لأنهم يرون اللاعب يفتح الصناديق في أقل من ثانية.
 
@@ -126,7 +126,7 @@ Something went wrong!
 (errcode 1)
 ```
 
-![سكرين شوت يبين رسالة الخطأ في الشات](https://github.com/YasserNull/server-form-overlay-pack/raw/main/docs/images/screenshot4.jpg)
+![سكرين شوت يبين رسالة الخطأ في الشات](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot4.jpg)
 
 وهناك خطأ آخر: عند التفاعل مع الشاشة (right click)، يتم لمس السرير كأن اللاعب ضغط عليه لينام، فتظهر رسالة "this bed is occupied"، أي أن هناك من ينام فيه بالفعل — وهو نفس اللاعب الذي حاول النوم فيه رغم أنه نائم فيه أصلًا. وهذا خلل غريب جدًا.
 
@@ -141,6 +141,6 @@ Something went wrong!
 
 ## الروابط والمصادر
 
-- **مستودع المشروع (GitHub):** https://github.com/YasserNull/server-form-overlay-pack
+- **مستودع المشروع (GitHub):** https://github.com/YasserNull/server-form-overlay
 - **المصدر التقني لخصائص الشاشات:** https://mc.163.com/mcstudio/mc-dev/MCDocs/2-ModSDK%E6%A8%A1%E7%BB%84%E5%BC%80%E5%8F%91/60-UI/4-UI%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3.html
 - **Mojira Bug Tracker (لتقديم التقرير):** https://report.bugs.mojang.com/servicedesk/customer/portals
