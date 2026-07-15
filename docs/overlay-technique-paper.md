@@ -136,7 +136,7 @@ There's yet another bug: when interacting with the screen (right click), the bed
 3. **No check for an already-open chest:** The game doesn't check whether the player already has a chest open, allowing several chests to be opened at once (in single-player mode).
 4. **Chests staying visually open:** After the chest screen is closed or the player moves away, chests remain appearing open (a shulker box becomes two blocks instead of one); only the last chest that was opened actually closes.
 5. **Chat error message:** The message `Something went wrong! (errcode 1)` appears when opening a chest.
-6. **Alert message when touching the bed the player is sleeping in:** The message `this bed is occupied` appears when the screen tap touches the bed as a sleep attempt, showing that the bed is occupied — by the very same player already asleep in it.
+6. **Chat message when touching the bed the player is sleeping in:** The message `this bed is occupied` appears when the screen tap touches the bed as a sleep attempt, showing that the bed is occupied — by the very same player already asleep in it.
 
 ## Links and Sources
 
