@@ -87,10 +87,10 @@ I also tested it on the `bed` sleep screen, but the game hides the control butto
 
 However, movement isn't possible, since the player stays fixed in place. As shown in the following images, the bow can be used to shoot arrows while asleep, along with throwing snowballs and using emotes.
 
-![Animated image showing emotes being used while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/emotes.gif)
-![Animated image from another player's perspective showing emotes being used while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/emotes2.gif)
-![Animated image from the player's perspective showing snowballs being thrown while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/snowball.gif)
-![Animated image from another player's perspective showing snowballs being thrown while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/snowball2.gif)
+![Gif showing emotes being used while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/emotes.gif)
+![Gif from another player's perspective showing emotes being used while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/emotes2.gif)
+![Gif from the player's perspective showing snowballs being thrown while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/snowball.gif)
+![Gif from another player's perspective showing snowballs being thrown while sleeping](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/snowball2.gif)
 
 I also discovered another bug: when I tap the screen (right click), it touches the bed as though attempting to sleep in it, and the message `this bed is occupied` appears in chat, even though the player is already asleep in that very bed.
 
@@ -106,7 +106,7 @@ When testing it on the chest screen, the most dangerous results appeared.
 
 A hack addon was created that works only through a Resource Pack, making it possible to use a chest while moving, building, and hitting at the same time. This amounts to cheating, especially if used on servers, since it deceives other players into believing the player has only opened a chest, when in reality they're moving, building, and attacking.
 
-![Animated image showing how I tricked a player on a CubeCraft server by opening a chest and taking them down while they were advancing on me](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/cubecraft.gif)
+![Gif showing how I tricked a player on a CubeCraft server by opening a chest and taking them down while they were advancing on me](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/cubecraft.gif)
 
 A bug was also discovered in the game's algorithms: it doesn't check whether the player already has a chest open, which allows several chests to be opened at the same time.
 
@@ -114,7 +114,7 @@ Stranger still, there's another bug: chests don't close after the chest screen i
 
 > **Note:** When more than one chest is opened and the chest screen is then closed, only the last chest that was opened actually closes. The same happens if more than one chest is opened and the player then moves away from them — only the last one opened closes, and the rest stay open.
 
-![Animated image showing several chests open at the same time](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/chests.gif)
+![Gif showing several chests open at the same time](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/chests.gif)
 
 When tested on servers, it doesn't work the same way — it isn't possible to open more than one chest, since attempting to open another chest immediately closes the previous one and opens the new one. This looks strange to other players, since they see the player opening chests in under a second.
 
@@ -126,8 +126,6 @@ Something went wrong!
 ```
 
 ![Screenshot showing the error message in chat](https://github.com/YasserNull/server-form-overlay/raw/main/docs/images/screenshot4.jpg)
-
-There's yet another bug: when interacting with the screen (right click), the bed gets touched as though the player pressed it to sleep, so the message "this bed is occupied" appears — meaning someone is already sleeping in it, even though it's the very same player who's trying to sleep in it while already asleep there. This is a very strange bug.
 
 ## Summary of Discovered Bugs (For Submission to Mojira)
 
